@@ -1,0 +1,26 @@
+@import "../../mixins/flexbox";
+
+header{
+  @include flex-box(row, start, flex-start);
+  padding: 1em;
+
+  .header-logo{
+    display: inline-block;
+  }
+
+  .header-list{
+    @include flex-box(row, space-between, flex-end);
+    list-style: none;
+    margin: 0;
+
+    .header-item{
+      padding: 1em;
+      font-size: 1.2rem;
+
+      &:hover{
+        color: darkgoldenrod;
+        cursor: pointer;
+      }
+    }
+  }
+}

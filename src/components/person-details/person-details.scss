@@ -1,0 +1,25 @@
+@import "../../mixins/flexbox";
+
+.person-details-wrapper{
+  @include flex-box(row, flex-start, normal);
+  background-color: #303030;
+  padding: 1em;
+  border-radius: 5px;
+  margin-top: 30px;
+
+  .person-details-info{
+    @include flex-box(column, flex-start, flex-start);
+    margin: 0 20px;
+
+    .list-group-item{
+      padding: 10px 0;
+      margin-left: 20px;
+    }
+  }
+
+  img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+  }
+}
